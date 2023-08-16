@@ -8,17 +8,16 @@
 ### [정제완 (JeongJeWan)](https://github.com/JeongJeWan)
 ### [추만석 (10kseok)](https://github.com/10kseok)
 
-
 ## 서비스 소개
 음식배송 Application ....
 
 ## 아키텍처
-도식화 하여 이미지로 첨부
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/ee572be3-32d2-4c4d-998b-e56a662b7f01)
 
 ## 일정관리
 
 ## CI/CD
-도식화 하여 이미지로 첨부
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0269b9a9-c805-4bdd-bc83-2bfa98d67162)
 
 ## 프로젝트 관리
 github project 링크 추가하고 프로젝트를 어떻게 진행 했다 간단한 설명 추가.
