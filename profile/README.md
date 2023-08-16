@@ -29,7 +29,9 @@
 
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
 
-## Client Test Flow
+## Black Box - Client Test Flow
+- 사이트에 처음 방문하는 회원이 사용할 수 있는 기능들에 대해 실험해보는 블랙박스테스트 플로우입니다.
+
 ![Client_Test_Flow](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/3caa5da3-914e-47fe-86eb-05e4133acb71)
 
 ## 프로젝트 관리
