@@ -13,6 +13,8 @@
 
 ## 아키텍처
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/ac04178c-f8db-476c-b9e0-98eaa9636b7b)
+
 
 ## CI/CD
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
@@ -26,6 +28,7 @@ ex) 스크럼을 xxx하게 진행하고, WBS로 일정관리하고 ... 이슈등
 
 ## 일정관리 ( WBS )
 ![image](https://github.com/nhnacademy-be3-CookShoong/cookshoong-backend/assets/61442066/5ce24e84-5435-452b-9588-26a8a0539662)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/fcb89ad5-123f-469f-83d3-467b60c94b87)
 
 ## github project 링크추가 ( RoadMap) 및 스크린샷 이미지 첨부
 일정관리를 이렇게 했다 정도의 간단한 설명.
