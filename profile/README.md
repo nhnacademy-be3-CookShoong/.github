@@ -15,6 +15,14 @@
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
+1. `Github`을 통해 코드베이스를 관리하며 기본적으로 `Github Action`을 통한 CI를 진행하여 빌드하고 테스트가 진행되어 성공시 통합과정이 이뤄집니다.  
+   1. 원격 레포지토리를 사용함에 따라 DB 정보 등 암호화가 필요한 정보들은 NHN Cloud의 Secure Key Manager를 사용하여 관리되고 환경변수를 통해 정보에 접근합니다.  
+   2. `NHN Dooray` 서비스의 WebHook 설정을 통해 CI 관련 알림을 받고 확인할 수 있습니다.
+   3. Google Checks를 변형한 Checkstyle을 사용하여 팀원들끼리의 코드 일관성을 유지하며 재사용성을 높였습니다.
+2. CI 과정이 일어나고 검증을 마친 코드들은 `Docker` 이미지로 생성되며 `Github Action` 또는 Jenkins를 통해 자동으로 `NHN Cloud Instance`에 `Docker Container`가 생성되어 배포가 이뤄집니다.  
+   1. CD 과정에서 정적 분석 툴인 `SonarQube`을 사용하여 코드 품질을 측정하며 이상있는 코드들을 감지합니다.
+
+
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
 
 ## 일정관리
