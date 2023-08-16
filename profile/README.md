@@ -15,12 +15,57 @@
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
+1. `Github`을 통해 코드베이스를 관리하며 기본적으로 `Github Action`을 통한 CI를 진행하여 빌드하고 테스트가 진행되어 성공시 통합과정이 이뤄집니다.  
+   1. 원격 레포지토리를 사용함에 따라 DB 정보 등 암호화가 필요한 정보들은 NHN Cloud의 Secure Key Manager를 사용하여 관리되고 환경변수를 통해 정보에 접근합니다.  
+   2. `NHN Dooray` 서비스의 WebHook 설정을 통해 CI 관련 알림을 받고 확인할 수 있습니다.
+   3. Google Checks를 변형한 Checkstyle을 사용하여 팀원들끼리의 코드 일관성을 유지하며 재사용성을 높였습니다.
+2. CI 과정이 일어나고 검증을 마친 코드들은 `Docker` 이미지로 생성되며 `Github Action` 또는 Jenkins를 통해 자동으로 `NHN Cloud Instance`에 `Docker Container`가 생성되어 배포가 이뤄집니다.  
+   1. CD 과정에서 정적 분석 툴인 `SonarQube`을 사용하여 코드 품질을 측정하며 이상있는 코드들을 감지합니다.
+
+
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
 
 ## 프로젝트 관리
-github project 링크 추가하고 프로젝트를 어떻게 진행 했다 간단한 설명 추가.
+체계적이고 효율적인 관리를 위해, [Github Project](https://github.com/orgs/nhnacademy-be3-CookShoong/projects/1)를 활용하여 프로젝트를 진행하였습니다.
 
-ex) 스크럼을 xxx하게 진행하고, WBS로 일정관리하고 ... 이슈등록해서 ... git-flow사용하고.. 등등 ... 대략적으로.. 설명.
+### Kanban
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/d4023219-5576-4f5a-a13e-7f5a84284ce3)
+
+Kanban보드를 활용하여 현재 프로젝트의 진행도를 수시로 확인할 수 있었습니다.
+
+### Scrum
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/26c89680-9a95-42ce-b413-95af2dfbcd60)
+
+스크럼은 평일, 하루에 한 번씩 진행하였습니다. 아침에 서로의 진행상황을 이야기하고, 필요하다면 오후에도 스스럼없이 의견을 나누는 시간을 가졌습니다.
+
+### Share
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/11ff915c-5988-4013-ab7b-d9fde6dfb515)
+
+서로 공부한 상황에 대해 수시로 공유하였습니다. 만약 모여서 이야기를 할 수 없는 상황일 경우, STUDY 또는 REFERENCE 항목에 해당하는 글을 남겨 확인하였습니다.
+
+### Collaboration
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/8c2e34d5-6d25-4199-9bf6-d2a6584bc35e)
+
+결정하거나 진행해야 할 일이 있다면 만료일자를 설정하여 해당 기간 안에 마치도록 하였습니다. 설령 마치지 못 했다면, delay로 넘겨 꾸준히 관리할 수 있도록 하였습니다.
+
+### Manage
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/6750030e-a8b1-453e-9823-1f23c09e585b)
+
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/26e59416-9a87-489d-a549-3532ce2a1d32)
+
+항목마다 프로젝트를 생성하여 관리했으며, git-flow 전략을 활용해 진행중인 작업별로 브랜치를 나누었습니다.
+
+각각 개발중인 내용은 feature에 작성하였으며, 해당 작업이 끝났을 경우 develop으로 병합하였습니다. 병합된 내용들은 main에 올려 실제 배포서버로 배포하였습니다.
+
+### PR
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/8c1f5600-5cbe-4369-90d9-a3324e00bbb2)
+
+PR 제목은 해당 작업을 잘 나타낼 수 있도록 하였으며, 2명 이상의 approve를 받았을 시 merge할 수 있도록 하였습니다.
+
+### CodeReview
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/2db4b538-f6bf-452b-8a8f-c03c8fe16ac6)
+
+PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더라도 온라인에 기록을 남겨 서로가 확인할 수 있도록 하였습니다.
 
 ## 일정관리 ( WBS )
 회원과 배송, 매장과 리뷰, 메뉴, 쿠폰과 포인트, 주문과 결제로 크게 나누어 업무를 분담하였습니다. 각 파트에서 주요 기능별로 업무 분리 후 세부 업무 목록을 작성하였고, 주요 업무를 수행하면서 사용하게 되는 예상 사용 기술들을 같이 기재하였습니다. 이후 배달 어플리케이션에서 반드시 필요한 (회원, 매장, 메뉴, 쿠폰)을 우선적으로 작업하였고, (주문, 결제, 포인트, 리뷰, 배송) 순으로 업무 진행 순서를 정했습니다. 
@@ -48,11 +93,12 @@ github project 링크추가 및 스크린샷 이미지 첨부
 - 추만석
 
 ### 기능
-- 인증서버에서 자격증명 확인 후 JWT 발급합니다.
-- JWT는 액세스토큰과 리프레쉬 토큰 두 개로 발급합니다.
-- 리프레쉬 토큰을 통해 토큰 재발급이 가능합니다.
+- 인증서버에서 자격증명 확인 후 JWT을 발급합니다.
+- 액세스토큰과 리프레쉬 토큰은 JWT로 발급되며 사용자는 리프레쉬 토큰을 통해 토큰들을 자동으로 재발급합니다.
 - 게이트웨이에서 JWT 검증하여 인증된 사용자만이 백엔드 API 호출을 가능하게 합니다.
 - 프론트서버에서는 발급받은 JWT를 이용한 백엔드 API 호출을 합니다.
+- 만료된 토큰 또는 탈취된 토큰의 접근을 막고 관리합니다. (블랙리스트 관리)
+- 리프레쉬 토큰은 암호화되어 관리됩니다.
 
 ## 회원
 > 사용자가 Cookshoong 서비스에 간편하게 가입할 수 있도록 돕습니다.
@@ -62,12 +108,16 @@ github project 링크추가 및 스크린샷 이미지 첨부
 
 ### 기능
 - Cookshoong 서비스를 이용하기 위한 회원가입이 가능합니다.
-- OAuth2에서 받은 권한으로 간편 회원가입이 가능합니다.
+- OAuth2에서 받은 권한을 통해 얻어낸 정보로 간편 회원가입이 가능합니다.
 - 등록된 자신의 정보를 수정할 수 있습니다.
-- 일반 회원, 사업자 회원, 관리자로 나눠서 관리합니다.
-- 일반 회원은 매장 또는 메뉴 조회, 주문의 권한을 가집니다.
-- 사업자 회원은 일반 회원의 권한보다 상위 권한을 가지며 매장을 등록할 수 있습니다.
+- 일반 회원, 사업자 회원, 관리자로 나눠서 관리하며 계층구조를 이룹니다.
+- 일반 회원은 매장 또는 메뉴 조회, 주문 등의 권한을 가집니다.
+- 사업자 회원은 일반 회원의 상위 권한이며 매장을 등록 및 관리 등을 할 수 있습니다.
 - 관리자는 일반, 사업자 회원보다 높은 권한을 가지며 서비스 이용에 모든 권한을 가집니다.
+
+### 사용된 기술
+- Spring Security, Spring Cloud Gateway, JWT
+
 
 ### 담당자 
 - 유승연
@@ -121,10 +171,45 @@ github project 링크추가 및 스크린샷 이미지 첨부
 - toast ui editor을 이용하여 사장님들이 다양하고 예쁘게 매장 설명 가능하도록 구현.
 - 매장 등록, 수정, 조회, 상태 변경 등 구현
 
-## 메뉴
+## 검색
+
+### 담당자
+- 윤동현
 
 ### 기능
-- 사업자가 메뉴 등록 시 이미지 업로드, 수정이 가능하도록 구현
+- Elasticsearch 를 이용한 매장 검색
+- 사용자와 매장의 위치정보를 이용하여, 배달 가능 거리 (3 km 이내) 매장만을 조회
+- 매장 이름, 메뉴 이름, 매장 카테고리, 지역 이름 등을 키워드로 통합하여 동적 쿼리를 생성
+- Elasticsearch, Logstash, kibana 를 사용하여 데이터베이스에 있는 데이터를 통합하여 Elasticsearch 데이터를 구성
+- 동의어, 예약어 사전에 대한 적용 (데이터베이스에 동의어, 예약어 테이블을 구성하여 배포시 해당 데이터를 사전 데이터로 변환하여 적용)
+
+### 사용기술
+- Elasticsearch, Logstash, Kibana, MySQL, Spring Data Elasticsearch, Nginx 사용.
+
+### 설명
+- Elasticsearch, Logstash, Kibana 를 Docker 환경으로 구성하여 서버의 구성과 배포를 자동화
+- Logstash 를 통해 MySQL 과의 Pipeline 을 구성하였습니다. Pipeline 을 통해 데이터를 받아올 때, Elasticsearch Template 에 맞게 받아오도록 구성
+- 데이터베이스 상에서 변경된 값을 Elasticsearch Data 에 반영하는 로직과 동의어, 예약어를 반영하는 로직을 이원화
+- 검색 결과에 대해 다양한 순서를 적용하도록 했습니다. 별점순, 거리순, 이벤트 여부 등에 따라 다른 검색 결과를 도출
+- Elasticsearch 검색 서비스를 무중단으로 제공하기 위해 2개의 서버를 구성하여 nginx 를 사용한 무중단 배포를 구현
+- Nori Tokenizer 를 사용하여 한글 형태소 분석 검색을 적용
+
+## 메뉴
+
+### 담당자
+- 윤동현
+
+### 기능
+- 사업자 : 메뉴 그룹, 메뉴, 옵션 그룹, 옵션 에 대한 조회, 등록, 수정 및 삭제. 본인 매장의 메뉴, 옵션 리스트 관리. 메뉴와 옵션 간의 관계 처리.
+- 사용자 : 매장의 메뉴 및 옵션 조회.
+
+### 사용된 기술 및 API
+- Spring JPA, Thymeleaf, javascript, toast ui editor 사용.
+
+### 설명
+- 메뉴, 옵션의 그룹화를 통해 주문시 원하는 메뉴에 대한 접근을 간소화.
+- 각 메뉴에 대한 그룹 및 옵션을 설정할 수 있게 구현.
+- 고객이 다양한 메뉴를 간편하게 고를 수 있도록 구현.
 
 ## 장바구니
 > 사용자가 주문하고자 하는 메뉴를 담아 편리하게 주문을 할 수 있다. 단, 한 매장에 대해서만 장바구니를 담을 수 있도록 되어 있습니다.
@@ -142,6 +227,9 @@ github project 링크추가 및 스크린샷 이미지 첨부
 - 장바구니에 메뉴를 담아두지 않은 상태라면 빈 장바구니를 생성해서 조회 시에 빈 장바구니가 존재하면 redis 에 들어 있는 빈 key 만 인식하게 함으로써 DB 접근을 최소화하도록 구현하였습니다.
    - 만약 Redis 에 장바구니 내역이나 빈 장바구니가 존재하지 않을 시에만 DB 에 접근하여 장바구니 내역을 불러와 Redis 에 다시 저장시킴으로써 DB 접근을 최소화하였습니다.
 - Back API 는 두 개 인스턴스로 동작하기 때문에 동시성 이슈가 발생하므로, 분산락을 활용해 먼저들어온 장바구니를 DB 에 저장하고 다음번에 들어오는 장바구니는 들어오기 전에 제약을 줘서 들어오지 못하도록 구현했습니다.
+
+## 주문
+> 사용자가 음식을 주문할 수 있습니다.
 
 ### 담당자
 - 김주호
@@ -241,7 +329,9 @@ github project 링크추가 및 스크린샷 이미지 첨부
 ### 사용된 기술
 JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 
-## 검색
+
+
+
 ## 파일
 ## 인프라
 ## 기술
