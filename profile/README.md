@@ -12,12 +12,12 @@
 음식배송 Application ....
 
 ## 아키텍처
-![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/ee572be3-32d2-4c4d-998b-e56a662b7f01)
-
-## 일정관리
+![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0269b9a9-c805-4bdd-bc83-2bfa98d67162)
+
+## 일정관리
 
 ## 프로젝트 관리
 github project 링크 추가하고 프로젝트를 어떻게 진행 했다 간단한 설명 추가.
