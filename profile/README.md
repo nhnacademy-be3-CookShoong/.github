@@ -175,6 +175,9 @@ github project 링크추가 및 스크린샷 이미지 첨부
 - Elasticsearch, Logstash, kibana 를 사용하여 데이터베이스에 있는 데이터를 통합하여 Elasticsearch 데이터를 구성
 - 동의어, 예약어 사전에 대한 적용 (데이터베이스에 동의어, 예약어 테이블을 구성하여 배포시 해당 데이터를 사전 데이터로 변환하여 적용)
 
+### 사용기술
+- Elasticsearch, Logstash, Kibana, MySQL, Spring Data Elasticsearch, Nginx 사용.
+
 ### 설명
 - Elasticsearch, Logstash, Kibana 를 Docker 환경으로 구성하여 서버의 구성과 배포를 자동화
 - Logstash 를 통해 MySQL 과의 Pipeline 을 구성하였습니다. Pipeline 을 통해 데이터를 받아올 때, Elasticsearch Template 에 맞게 받아오도록 구성
