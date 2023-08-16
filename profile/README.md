@@ -15,7 +15,7 @@
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
-![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0269b9a9-c805-4bdd-bc83-2bfa98d67162)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
 
 ## 일정관리
 
