@@ -20,9 +20,46 @@
 ## 일정관리
 
 ## 프로젝트 관리
-github project 링크 추가하고 프로젝트를 어떻게 진행 했다 간단한 설명 추가.
+체계적이고 효율적인 관리를 위해, [Github Project](https://github.com/orgs/nhnacademy-be3-CookShoong/projects/1)를 활용하여 프로젝트를 진행하였습니다.
 
-ex) 스크럼을 xxx하게 진행하고, WBS로 일정관리하고 ... 이슈등록해서 ... git-flow사용하고.. 등등 ... 대략적으로.. 설명.
+### Kanban
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/d4023219-5576-4f5a-a13e-7f5a84284ce3)
+
+Kanban보드를 활용하여 현재 프로젝트의 진행도를 수시로 확인할 수 있었습니다.
+
+### Scrum
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/26c89680-9a95-42ce-b413-95af2dfbcd60)
+
+스크럼은 평일, 하루에 한 번씩 진행하였습니다. 아침에 서로의 진행상황을 이야기하고, 필요하다면 오후에도 스스럼없이 의견을 나누는 시간을 가졌습니다.
+
+### Share
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/11ff915c-5988-4013-ab7b-d9fde6dfb515)
+
+서로 공부한 상황에 대해 수시로 공유하였습니다. 만약 모여서 이야기를 할 수 없는 상황일 경우, STUDY 또는 REFERENCE 항목에 해당하는 글을 남겨 확인하였습니다.
+
+### Collaboration
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/8c2e34d5-6d25-4199-9bf6-d2a6584bc35e)
+
+결정하거나 진행해야 할 일이 있다면 만료일자를 설정하여 해당 기간 안에 마치도록 하였습니다. 설령 마치지 못 했다면, delay로 넘겨 꾸준히 관리할 수 있도록 하였습니다.
+
+### Manage
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/6750030e-a8b1-453e-9823-1f23c09e585b)
+
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/26e59416-9a87-489d-a549-3532ce2a1d32)
+
+항목마다 프로젝트를 생성하여 관리했으며, git-flow 전략을 활용해 진행중인 작업별로 브랜치를 나누었습니다.
+
+각각 개발중인 내용은 feature에 작성하였으며, 해당 작업이 끝났을 경우 develop으로 병합하였습니다. 병합된 내용들은 main에 올려 실제 배포서버로 배포하였습니다.
+
+### PR
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/8c1f5600-5cbe-4369-90d9-a3324e00bbb2)
+
+PR 제목은 해당 작업을 잘 나타낼 수 있도록 하였으며, 2명 이상의 approve를 받았을 시 merge할 수 있도록 하였습니다.
+
+### CodeReview
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/61442066/2db4b538-f6bf-452b-8a8f-c03c8fe16ac6)
+
+PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더라도 온라인에 기록을 남겨 서로가 확인할 수 있도록 하였습니다.
 
 ## 일정관리 ( WBS )
 ![image](https://github.com/nhnacademy-be3-CookShoong/cookshoong-backend/assets/61442066/5ce24e84-5435-452b-9588-26a8a0539662)
