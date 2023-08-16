@@ -12,12 +12,11 @@
 음식배송 Application ....
 
 ## 아키텍처
-###System Architecture
-###One-Liner
 - 클라이언트의 요청은 NginX 통해서 들어오고, 로드밸런서에서 Round Robin 방식으로 순서대로 Front Application 에 보내지게 됩니다.
 - Front Application 은 필요한 요청을 API Gateway 를 통해 처리하고, Gateway 는 해당 요청에 대해 처리되어야 하는 서비스 API 로 요청을 보내게 됩니다.
 - 이때 Service Discovery 인 Eureka 에서 필요한 서비스가 어느 곳에 있는지에 대한 정보를 API Gateway로 반환하고 API Gateway 는 이에 따라 해당 API 서비스를 호출하고 결과를 받게 됩니다.
 - 해당 API 서비스는 Auth, Shop 이 있습니다. 이 외에, 검색 기능 향상을 위한 엘락스틱 서치 서버 대용량 일괄처리를 위한 배치 서버가 존재합니다.
+
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
