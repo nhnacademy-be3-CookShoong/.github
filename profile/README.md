@@ -82,13 +82,25 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ![image](https://github.com/nhnacademy-be3-CookShoong/cookshoong-backend/assets/61442066/5ce24e84-5435-452b-9588-26a8a0539662)
 
 ## github project 링크추가 ( RoadMap) 및 스크린샷 이미지 첨부
-일정관리를 이렇게 했다 정도의 간단한 설명.
+- WBS 일정을 바탕으로 각자 일정에 맞추어 세분화 작업을 진행하였습니다. 추가로 각자 진행하는 부분에 있어서 사전 지식 및 진행 사항 등을 일정 안에 작성함으로써 프로젝트 효율을 높였습니다.
+- ### 추만석
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0d99356e-f8bb-4a7f-9523-e2b68b835188)
+- ### 김동현
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/cf01017f-fc7b-4016-a6c7-91aa6a831a8b)
+- ### 김주호
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/8bda05b3-7fea-4b35-8a84-9fa744163686)
+- ### 정제완
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/1adbf6eb-e8fb-46d6-b59b-4793476591c6)
+- ### 유승연
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/eb275314-3e9a-4be6-a14b-505250105167)
 
 ## 칸반보드
-github project 링크추가 및 스크린샷 이미지 첨부
+- Git 에서 제공하는 칸반보드를 활용해서 해야할 일, 진행중, 지연, 완료 단계로 프로젝트 효율을 높였습니다.
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/5907ea4e-721a-4db0-9a8d-9188a297c35b)
 
 ## 테스트 커버리지
-마지막으로 측정된(최종) 이미지로 첨부
+- 목표 : 라인 커버리지 80% 이상(2023년 8월 19일 기준)
+![tc](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/74bd28d0-c817-49dc-8ec0-aa5b782942f8)
 
 ## REST API Specification
 외부에서 확인할 수 있는 링크
@@ -341,18 +353,20 @@ github project 링크추가 및 스크린샷 이미지 첨부
 ### 사용된 기술
 JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 
-
-
 ## 인프라
+### 담당자
+- 정제완, 윤동현, 김주호, 유승연, 추만석
+
+### 기능
+- Github Action, Jenkins, Nginx, Road Balancer, Docker, NHN Cloud Instance
+
+### 설명
+- CI/CD
+   - Github Action : front, back, betch, gateway
+   - Jenkins : auth, delivery
+   - Github Action, Jenkins 를 통해 CI를 진행하고 검증을 마친 코드들은 Docker 이미지로 생성되며 자동으로 NHN Cloud Instance 에 Docker Container 가 생성되어 배포가 이뤄집니다.
+- 무중단 배포
+   - Front Server : 클라이언트의 요청을 Nginx 통해서 들어오고, 로드밸런서에서 Round Robin 방식으로 순서대로 Front Application 에 보내지게 됩니다.
+   - Back, Betch, Gateway, Delivery : Service Discovery 인 Eureka 에서 필요한 서비스가 어느 곳에 있는지에 대한 정보를 API Gateway로 반환하고 API Gateway 는 이에 따라 해당 API 서비스를 호출하고 결과를 받게 됩니다.
+
 ## 기술
-
-
-
-
-
-
-
-
-Spring Cloud Gateway...
-
-프로젝트에서 사용한 기술스택을 작성하세요.
