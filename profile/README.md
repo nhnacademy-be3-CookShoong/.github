@@ -11,6 +11,17 @@
 ## 서비스 소개
 음식배송 Application ....
 
+## ERD
+https://www.erdcloud.com/d/5D89pNAP23LAuexGz
+
+### DB관리자
+- 유승연
+ERD 작성은 ERDCloud를 사용하였으며, 생성 및 수정은 MyWorkbench를 이용하였습니다. 해당 DB의 DDL파일은 이곳을 참조해주세요. -> https://github.com/nhnacademy-be3-CookShoong/ddl_manage
+배포 전 Cook-Shoong ERD 0.2.8version까지 업데이트 되었습니다. 배포 후 1.0.0 version으로 ERD 공유됩니다.
+
+![스크린샷 2023-08-19 오후 8 36 20](https://github.com/nhnacademy-be3-CookShoong/.github/assets/66362713/1d51e50a-18aa-4920-b179-75a030591ff6)
+
+
 ## 아키텍처
 - 클라이언트의 요청은 NginX 통해서 들어오고, 로드밸런서에서 Round Robin 방식으로 순서대로 Front Application 에 보내지게 됩니다.
 - Front Application 은 필요한 요청을 API Gateway 를 통해 처리하고, Gateway 는 해당 요청에 대해 처리되어야 하는 서비스 API 로 요청을 보내게 됩니다.
