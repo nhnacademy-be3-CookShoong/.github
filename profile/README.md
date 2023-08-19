@@ -81,7 +81,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 
 ![image](https://github.com/nhnacademy-be3-CookShoong/cookshoong-backend/assets/61442066/5ce24e84-5435-452b-9588-26a8a0539662)
 
-## github project 링크추가 ( RoadMap) 및 스크린샷 이미지 첨부
+## [Github Projects](https://github.com/orgs/nhnacademy-be3-CookShoong/projects/1) 링크, Github Roadmap 관리
 - WBS 일정을 바탕으로 각자 일정에 맞추어 세분화 작업을 진행하였습니다. 추가로 각자 진행하는 부분에 있어서 사전 지식 및 진행 사항 등을 일정 안에 작성함으로써 프로젝트 효율을 높였습니다.
 - 추만석
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0d99356e-f8bb-4a7f-9523-e2b68b835188)
