@@ -1,9 +1,6 @@
 # 쿡슝(Cook-Shoong)
 ![](https://velog.velcdn.com/images/eora21/post/9b2cc6a2-84df-4ff6-9c1c-338c53c7f22e/image.png)
 
-## 목차
-- [팀원](#팀원)
-
 ## 팀원
 ### [김주호 (eora21)](https://github.com/eora21)
 ### [유승연 (seong1542)](https://github.com/seong1542)
@@ -119,9 +116,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ## REST API Specification
 외부에서 확인할 수 있는 링크
 
-# 주요 기능
-
-
+# 주요기능
 
 ## 인증/인가
 > Cookshoong 서비스 이용자임을 증명을 확인하고 서비스를 이용할 수 있게 합니다.
