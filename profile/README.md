@@ -8,9 +8,6 @@
 ### [정제완 (JeongJeWan)](https://github.com/JeongJeWan)
 ### [추만석 (10kseok)](https://github.com/10kseok)
 
-## 서비스 소개
-음식배송 Application ....
-
 ## ERD
 https://www.erdcloud.com/d/5D89pNAP23LAuexGz
 
