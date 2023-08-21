@@ -96,7 +96,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 - WBS 일정을 바탕으로 각자 일정에 맞추어 세분화 작업을 진행하였습니다. 추가로 각자 진행하는 부분에 있어서 사전 지식 및 진행 사항 등을 일정 안에 작성함으로써 프로젝트 효율을 높였습니다.
 - 추만석
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0d99356e-f8bb-4a7f-9523-e2b68b835188)
-- 김동현
+- 윤동현
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/cf01017f-fc7b-4016-a6c7-91aa6a831a8b)
 - 김주호
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/8bda05b3-7fea-4b35-8a84-9fa744163686)
