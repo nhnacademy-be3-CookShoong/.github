@@ -90,7 +90,8 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ## 일정관리 ( WBS )
 회원과 배송, 매장과 리뷰, 메뉴, 쿠폰과 포인트, 주문과 결제로 크게 나누어 업무를 분담하였습니다. 각 파트에서 주요 기능별로 업무 분리 후 세부 업무 목록을 작성하였고, 주요 업무를 수행하면서 사용하게 되는 예상 사용 기술들을 같이 기재하였습니다. 이후 배달 어플리케이션에서 반드시 필요한 (회원, 매장, 메뉴, 쿠폰)을 우선적으로 작업하였고, (주문, 결제, 포인트, 리뷰, 배송) 순으로 업무 진행 순서를 정했습니다. 
 
-![image](https://github.com/nhnacademy-be3-CookShoong/cookshoong-backend/assets/61442066/5ce24e84-5435-452b-9588-26a8a0539662)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/76582376/fd052d8c-c4b6-468f-a906-62300eecfc0a)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/76582376/fb43ef30-62b6-493c-aa0b-e60c965be92f)
 
 ## [Github Projects](https://github.com/orgs/nhnacademy-be3-CookShoong/projects/1) 링크, Github Roadmap 관리
 - WBS 일정을 바탕으로 각자 일정에 맞추어 세분화 작업을 진행하였습니다. 추가로 각자 진행하는 부분에 있어서 사전 지식 및 진행 사항 등을 일정 안에 작성함으로써 프로젝트 효율을 높였습니다.
