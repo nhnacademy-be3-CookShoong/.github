@@ -404,12 +404,12 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white)
 
-- Search
+- Search <br>
 ![Elastic](https://img.shields.io/badge/Elastic-005571?style=flat&logo=Elastic&logoColor=white)
 ![Elastic Stack](https://img.shields.io/badge/ElasticStack-005571?style=flat&logo=elasticstack&logoColor=white)
 ![Elastic Search](https://img.shields.io/badge/ElasticStack-005571?style=flat&logo=elasticsearch&logoColor=white)
 
-- 그 외 <br>
+- 그 외 기술 <br>
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white)
