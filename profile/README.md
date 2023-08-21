@@ -1,6 +1,9 @@
 # 쿡슝(Cook-Shoong)
 ![](https://velog.velcdn.com/images/eora21/post/9b2cc6a2-84df-4ff6-9c1c-338c53c7f22e/image.png)
 
+## 목차
+- [팀원](#팀원)
+
 ## 팀원
 ### [김주호 (eora21)](https://github.com/eora21)
 ### [유승연 (seong1542)](https://github.com/seong1542)
