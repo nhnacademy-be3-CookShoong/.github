@@ -240,11 +240,13 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 
 ### 설명
 - Elasticsearch, Logstash, Kibana 를 Docker 환경으로 구성하여 서버의 구성과 배포를 자동화
-- Logstash 를 통해 MySQL 과의 Pipeline 을 구성하였습니다. Pipeline 을 통해 데이터를 받아올 때, Elasticsearch Template 에 맞게 받아오도록 구성
+- Logstash 를 통해 MySQL 과의 Pipeline 을 구성
+- Pipeline 을 통해 데이터를 받아올 때, Elasticsearch Template 을 적용하여 데이터를 구성
 - 데이터베이스 상에서 변경된 값을 Elasticsearch Data 에 반영하는 로직과 동의어, 예약어를 반영하는 로직을 이원화
-- 검색 결과에 대해 다양한 순서를 적용하도록 했습니다. 별점순, 거리순, 이벤트 여부 등에 따라 다른 검색 결과를 도출
-- Elasticsearch 검색 서비스를 무중단으로 제공하기 위해 2개의 서버를 구성하여 nginx 를 사용한 무중단 배포를 구현
-- Nori Tokenizer 를 사용하여 한글 형태소 분석 검색을 적용
+- 검색 결과에 대해 다양한 순서를 적용하여 별점순, 거리순, 이벤트 여부 등에 따라 다른 검색 결과를 도출
+- Elasticsearch 검색 서비스를 무중단으로 제공하기 위해 3개의 노드를 클러스터로 묶어서 서버를 구성
+- Nori Tokenizer 를 사용하여 한글 형태소 분석 검색을 구현
+- fuzzeness filter 를 적용하여 오타에 대한 검색을 구현
 
 ---
 
@@ -262,9 +264,10 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 - Spring JPA, Thymeleaf, javascript, toast ui editor 사용.
 
 ### 설명
-- 메뉴, 옵션의 그룹화를 통해 주문시 원하는 메뉴에 대한 접근을 간소화.
-- 각 메뉴에 대한 그룹 및 옵션을 설정할 수 있게 구현.
-- 고객이 다양한 메뉴를 간편하게 고를 수 있도록 구현.
+- 메뉴, 옵션의 그룹화를 통해 주문시 원하는 메뉴에 대한 접근을 간소화
+- 사업자가 각 메뉴에 대한 그룹 및 옵션을 설정할 수 있게 구현. 수정시 메뉴에 대한 기존 정보를 불러와 수정할 수 있도록 JavaScript 파일을 구성
+- 고객이 다양한 메뉴를 간편하게 고를 수 있도록 구현. 각 메뉴의 그룹에 따라 탭 방식으로 페이지에 배치
+- 메뉴의 이름, 메뉴의 설명 등을 검색 조건에 포함하여 고객이 해당 메뉴의 이름을 통해 매장을 검색할 수 있도록 구현
 
 ---
 
@@ -412,10 +415,16 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 
 ### 기능
 - 각 페이지에서 공통적으로 사용되는 CSS, JavaScript 등에 대한 레이아웃 통합
-- 모바일 화면, 웹 화면 에 따른 
+- 모바일 화면, PC 웹 화면의 너비와 높이에 맞게 페이지의 컨텐츠를 재정렬
 
 ### 사용된 기술
 - Thymeleaf, Boot Strap, CSS, JavaScript
+
+### 설명
+- Thymeleaf Layout 을 적용하여 각 페이지에서 반복되는 CSS, JavaScript 주입 부분을 제거
+- Boot Strap 을 적용하여 html 의 class 사용으로 페이지 간의 일관적인 디자인 구현
+- 모바일 화면, PC 웹 화면의 너비와 높이에 맞게 페이지 컨텐츠의 너비를 줄이거나 배치를 재정렬
+- 텍스트 컨텐츠의 너비가 부족한 경우에 텍스트를 아이콘으로 변경하여 사용
 
 ---
 
