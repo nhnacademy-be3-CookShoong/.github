@@ -16,7 +16,7 @@ https://www.erdcloud.com/d/5D89pNAP23LAuexGz
   
 ERD 작성은 ERDCloud를 사용하였으며, 생성 및 수정은 MyWorkbench를 이용하였습니다. 해당 DB의 DDL파일은 이곳을 참조해주세요. -> https://github.com/nhnacademy-be3-CookShoong/ddl_manage
 
-배포 전 Cook-Shoong ERD 0.2.8version까지 업데이트 되었습니다. 배포 후 1.0.0 version으로 ERD 공유됩니다.
+Cook-Shoong ERD 0.2.8version까지 업데이트 되었습니다.
 
 
 ![스크린샷 2023-08-19 오후 8 36 20](https://github.com/nhnacademy-be3-CookShoong/.github/assets/66362713/1d51e50a-18aa-4920-b179-75a030591ff6)
