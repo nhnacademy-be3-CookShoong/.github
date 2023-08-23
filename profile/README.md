@@ -111,7 +111,6 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/5907ea4e-721a-4db0-9a8d-9188a297c35b)
 
 ## 테스트 커버리지
-- 목표 : 라인 커버리지 80% 이상(2023년 8월 19일 기준)
 ![tc](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/74bd28d0-c817-49dc-8ec0-aa5b782942f8)
 
 ## REST API Specification
