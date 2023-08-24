@@ -235,7 +235,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 - 동의어, 예약어 사전에 대한 적용 (데이터베이스에 동의어, 예약어 테이블을 구성하여 배포시 해당 데이터를 사전 데이터로 변환하여 적용)
 
 ### 사용기술
-- Elasticsearch, Logstash, Kibana, MySQL, Spring Data Elasticsearch, Nginx 사용.
+- Elasticsearch, Logstash, Kibana, MySQL, Spring Data Elasticsearch 사용.
 
 ### 설명
 - Elasticsearch, Logstash, Kibana 를 Docker 환경으로 구성하여 서버의 구성과 배포를 자동화
