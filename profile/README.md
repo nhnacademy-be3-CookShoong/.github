@@ -447,6 +447,10 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
    - Back, Betch, Gateway, Delivery : Service Discovery 인 Eureka 에서 필요한 서비스가 어느 곳에 있는지에 대한 정보를 API Gateway로 반환하고 API Gateway 는 이에 따라 해당 API 서비스를 호출하고 결과를 받게 됩니다.
 
 ---
+## QA
+### QA관리
+저희 팀에서는 QA를 아래와 같이 관리하여 팀원들 모두 미흡한 점을 공유하고, 보완하고자 노력하였습니다.
+https://github.com/nhnacademy-be3-CookShoong/issue-manage/issues/273
 
 
 ## 기술
