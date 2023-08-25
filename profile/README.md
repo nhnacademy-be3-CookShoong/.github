@@ -111,7 +111,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/5907ea4e-721a-4db0-9a8d-9188a297c35b)
 
 ## 테스트 커버리지
-- Shop 서버에 주요 기능들에 대한 테스트 커버리지입니다.
+- Shop 서버의 주요 기능들에 대한 테스트 커버리지입니다.
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/93ebfd8b-76f6-418d-b5f6-f0d03145acdd)
 
 ## REST API Specification
