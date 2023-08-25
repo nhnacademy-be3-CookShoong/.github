@@ -449,7 +449,8 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 ---
 ## QA
 ### QA관리
-저희 팀에서는 QA를 아래와 같이 관리하여 팀원들 모두 미흡한 점을 공유하고, 보완하고자 노력하였습니다.
+저희 팀에서는 QA를 아래와 같이 관리하여 팀원들 모두 미흡한 점을 공유하고, 보완하고자 노력하였습니다. 
+
 https://github.com/nhnacademy-be3-CookShoong/issue-manage/issues/273
 
 
