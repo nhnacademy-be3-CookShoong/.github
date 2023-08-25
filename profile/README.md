@@ -115,7 +115,8 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/93ebfd8b-76f6-418d-b5f6-f0d03145acdd)
 
 ## REST API Specification
-외부에서 확인할 수 있는 링크
+- SwaggerUI + Spring REST Docs 함께 사용하였습니다.
+- [REST API](https://www.cookshoong.store/swagger-ui)
 
 # 주요기능
 
