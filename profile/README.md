@@ -117,6 +117,7 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 ## REST API Specification
 - SwaggerUI + Spring REST Docs 함께 사용하였습니다.
 - [REST API](https://www.cookshoong.store/swagger-ui)
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/d2659fac-288c-45f6-ba75-018ca5cfe9b6)
 
 # 주요기능
 
