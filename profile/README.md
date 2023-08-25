@@ -26,16 +26,16 @@ Cook-Shoong ERD 0.2.8version까지 업데이트 되었습니다.
 - 클라이언트의 요청은 NginX 통해서 들어오고, 로드밸런서에서 Round Robin 방식으로 순서대로 Front Application 에 보내지게 됩니다.
 - Front Application 은 필요한 요청을 API Gateway 를 통해 처리하고, Gateway 는 해당 요청에 대해 처리되어야 하는 서비스 API 로 요청을 보내게 됩니다.
 - 이때 Service Discovery 인 Eureka 에서 필요한 서비스가 어느 곳에 있는지에 대한 정보를 API Gateway로 반환하고 API Gateway 는 이에 따라 해당 API 서비스를 호출하고 결과를 받게 됩니다.
-- 해당 API 서비스는 Auth, Shop 이 있습니다. 이 외에, 검색 기능 향상을 위한 엘락스틱 서치 서버 대용량 일괄처리를 위한 배치 서버가 존재합니다.
+- 해당 API 서비스는 Auth, Shop 이 있습니다. 이 외에, 검색 기능 향상을 위한 엘라스틱 서치 서버 대용량 일괄처리를 위한 배치 서버가 존재합니다.
 
 ![CookShoong_아키텍처](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/e644a030-23cf-4e91-9319-7e45d905893a)
 
 ## CI/CD
 1. `Github`을 통해 코드베이스를 관리하며 기본적으로 `Github Action`을 통한 CI를 진행하여 빌드하고 테스트가 진행되어 성공시 통합과정이 이뤄집니다.  
-   - 원격 레포지토리를 사용함에 따라 DB 정보 등 암호화가 필요한 정보들은 NHN Cloud의 Secure Key Manager를 사용하여 관리되고 환경변수를 통해 정보에 접근합니다.  
+   - 원격 레포지토리를 사용함에 따라 DB 정보 등 암호화가 필요한 정보들은 NHN Cloud의 `Secure Key Manager`를 사용하여 관리되고 환경변수를 통해 정보에 접근합니다.  
    - `NHN Dooray` 서비스의 WebHook 설정을 통해 CI 관련 알림을 받고 확인할 수 있습니다.
    - Google Checks를 변형한 Checkstyle을 사용하여 팀원들끼리의 코드 일관성을 유지하며 재사용성을 높였습니다.
-2. CI 과정이 일어나고 검증을 마친 코드들은 `Docker` 이미지로 생성되며 `Github Action` 또는 Jenkins를 통해 자동으로 `NHN Cloud Instance`에 `Docker Container`가 생성되어 배포가 이뤄집니다.  
+2. CI 과정이 일어나고 검증을 마친 코드들은 `Docker` 이미지로 생성되며 `Github Action` 또는 `Jenkins`를 통해 자동으로 `NHN Cloud Instance`에 `Docker Container`가 생성되어 배포가 이뤄집니다.  
    - CD 과정에서 정적 분석 툴인 `SonarQube`을 사용하여 코드 품질을 측정하며 이상있는 코드들을 감지합니다.
 
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/0cf8b365-230e-4040-98d9-04b0323c8a50)
@@ -450,6 +450,9 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 ## QA
 ### QA관리
 저희 팀에서는 QA를 아래와 같이 관리하여 팀원들 모두 미흡한 점을 공유하고, 보완하고자 노력하였습니다. 
+
+### 담당자
+- 정제완, 윤동현, 김주호, 유승연, 추만석
 
 https://github.com/nhnacademy-be3-CookShoong/issue-manage/issues/273
 
