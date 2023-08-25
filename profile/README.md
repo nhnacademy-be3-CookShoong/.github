@@ -453,6 +453,8 @@ JPA, Thymeleaf, javascript, Mysql, ObjectStorage, toast Ui editor 사용
 
 https://github.com/nhnacademy-be3-CookShoong/issue-manage/issues/273
 
+![스크린샷 2023-08-25 오전 9 30 58](https://github.com/nhnacademy-be3-CookShoong/.github/assets/66362713/a06222df-9a4a-4d7f-91c6-d252ac3dacc8)
+
 
 ## 기술
 - Spring <br>
