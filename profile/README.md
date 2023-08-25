@@ -119,6 +119,11 @@ PR에 대해 코드리뷰를 진행하였으며, 오프라인으로 진행했더
 - [REST API](https://www.cookshoong.store/swagger-ui)
 ![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/d2659fac-288c-45f6-ba75-018ca5cfe9b6)
 
+## [QA](https://github.com/orgs/nhnacademy-be3-CookShoong/projects/1/views/18?pane=issue&itemId=35665501)
+- CookShoong에 'Quality Assurance'을 진행하여 문제가 될 수 있는 부분을 종합하고 해결하였습니다.
+![image](https://github.com/nhnacademy-be3-CookShoong/.github/assets/85005950/bdfcf19f-a7fa-4986-8787-d35ce4ae5e35)
+
+
 # 주요기능
 
 ## 인증/인가
